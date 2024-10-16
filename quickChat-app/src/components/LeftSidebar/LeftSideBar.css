@@ -1,0 +1,145 @@
+.ls {
+    background-color: #FFFFFF;
+    color: black;
+    height: 95vh;
+    border-right: 1px solid #e3e6e7;
+}
+
+.ls-top {
+    padding: 20px;
+}
+
+.ls-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.ls-nav .logo {
+    max-width: 180px;
+}
+
+.ls-nav .menu img {
+    max-height: 20px;
+    opacity: 0.6;
+    cursor: pointer;
+}
+
+.ls-search {
+    background-color: #ebebeb;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 10px 16px;
+    margin-top: 20px;
+    border-radius: 20px;
+}
+
+.ls-search img {
+    width: 16px;
+}
+
+.ls-search input {
+    background: transparent;
+    border: none;
+    outline: none;
+    color: #54656f;
+    font-size: 15px;
+
+}
+
+.ls-search input::placeholder {
+    color: #54656f;
+    ;
+}
+
+.ls-list {
+    display: flex;
+    flex-direction: column;
+    height: 80%;
+    overflow-y: scroll;
+}
+
+.friends img {
+    width: 49px;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+}
+
+.friends {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 17px;
+}
+
+.friends div {
+    display: flex;
+    flex-direction: column;
+}
+
+.friends span {
+    color: #54656f;
+    font-size: 14px;
+}
+
+.friends:hover {
+    background-color: #ebebeb;
+}
+
+.ls-nav .menu {
+    position: relative;
+    padding: 10px 0px;
+}
+
+.menu .sub-menu {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    width: 160px;
+    padding: 20px;
+    border-radius: 5px;
+    background-color: white;
+    color: black;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    display: none;
+}
+
+.sub-menu hr {
+    border: none;
+    height: 1px;
+    background: #a4a4a4;
+    margin: 8px 0px;
+}
+
+.sub-menu p {
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.sub-menu p:hover {
+    background-color: #ebebeb;
+}
+
+.menu:hover .sub-menu {
+    display: block;
+}
+
+.friends.border img {
+    border: 3px solid #07ff07;
+}
+
+/* .friends.border  {
+    border: 3px solid #07ff07;
+} */
+.notification{
+   margin-right:"25px"
+}
+
+@media (max-width:900px) {
+    .ls {
+        width: 100%;
+    }
+}
